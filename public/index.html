@@ -1,15 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/img/logos/logo_agromapp_icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="logo192.png" />
+    <!-- <link rel="apple-touch-icon" href="logo192.png" /> -->
+
+    <!-- Bootstrap and Famosos CSS framework -->
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css" />
+    <link rel="stylesheet" id="css-main" href="%PUBLIC_URL%/css/oneui.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -24,20 +33,43 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Agromapp</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <!-- Famosos Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
+    <script src="%PUBLIC_URL%/js/core/jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/jquery.slimscroll.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/jquery.scrollLock.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/jquery.appear.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/jquery.countTo.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/jquery.placeholder.min.js"></script>
+    <script src="%PUBLIC_URL%/js/core/js.cookie.min.js"></script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- Page JS Plugins -->
+    <script src="%PUBLIC_URL%/js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/sweetalert2/es6-promise.auto.min.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/sweetalert2/sweetalert2.min.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/slick/slick.min.js"></script>
+
+    <!-- Page JS Code -->
+    <script src="%PUBLIC_URL%/js/pages/base_ui_activity.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/jquery-vide/jquery.vide.min.js"></script>
+    <script src="%PUBLIC_URL%/js/pages/base_tables_datatables.js"></script>
+    <script src="%PUBLIC_URL%/js/pages/base_forms_wizard.js"></script>
+    <script src="%PUBLIC_URL%/js/plugins/highlightjs/highlight.pack.js"></script>
+    <script src="%PUBLIC_URL%/js/pages/base_pages_lock.js"></script>
+
+    <script>
+      window.addEventListener("click", function(event) {
+        $(".tooltip.top.in").remove();
+      });
+    </script>
   </body>
 </html>

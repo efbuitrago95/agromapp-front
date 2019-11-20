@@ -1,0 +1,20 @@
+#page-container {
+  .sidebar-logo {
+    display: none;
+  }
+  .sidebar-complete-logo {
+    display: block;
+  }
+
+  &.sidebar-mini {
+    .side-header{
+      text-align: left;
+    }
+    .sidebar-logo {
+      display: block;
+    }
+    .sidebar-complete-logo {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,178 @@
+@import "./theme";
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
+
+.action-blocked{
+  display: none ;
+}
+
+body.modal-open, body.block-fullscreen {
+  .fade.fade-right.in {
+    transform: initial;
+  }
+}
+
+.modal {
+  z-index: 40000;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.modal-backdrop.in {
+  opacity: 0.6;
+}
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 90%;
+  }
+}
+
+.css-yk16xz-control {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 1px 0 #e6e6e6 !important;
+  box-shadow: 0 1px 0 #e6e6e6 !important;
+}
+
+.css-1wa3eu0-placeholder {
+  color: hsl(0, 0%, 67%) !important;
+}
+
+.css-1wa3eu0-placeholder, .css-w8afj7-Input, .css-1uccc91-singleValue {
+  margin-left: -8px !important;
+}
+
+.css-1pahdxg-control:hover, .css-1pahdxg-control:focus, .css-1pahdxg-control:active {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 2px 0 #646464 !important;
+  box-shadow: 0 2px 0 #646464 !important;
+  border: 0 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .content.content-boxed {
+    max-width: 1500px !important;
+  }
+}
+
+
+.block.block-themed.block-opt-refresh-icon7 {
+
+  .table-scrolling {
+    height: 300px !important;
+    overflow-y: scroll !important;
+
+    ::-webkit-scrollbar {
+      -webkit-appearance: none;
+      width: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background-color: rgba(0, 0, 0, .5);
+      -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    }
+
+  }
+
+  &.block-opt-fullscreen {
+    .table-scrolling {
+      height: 73vh !important;
+    }
+  }
+}
+
+//.block.block-opt-fullscreen {
+//  top: 60px !important;
+//  left: 60px !important;
+//  z-index: 1024 !important;
+//}
+
+
+.bg-image {
+  background-color: #3e4a58 !important;
+  background-blend-mode: luminosity !important;
+}
+
+.content.bg-image.overflow-hidden {
+  background-color: #3e4a58 !important;
+  background-image: url("https://image.freepik.com/vector-gratis/diseno-fondo-lineas-sobre-fondo-azul_1308-4823.jpg") !important;
+  background-blend-mode: luminosity !important;
+}
+
+.checkbox-row {
+  width: 20px;
+
+  .css-checkbox {
+    margin: 0px;
+  }
+}
+
+.row-active {
+  background-color: #f6fdff !important;
+}
+
+//////////////////////////////////////////////////
+// CONTEXT MENU
+//////////////////////////////////////////////////
+
+.contextMenu {
+  position: fixed;
+  background: white;
+  box-shadow: 0px 2px 20px #999999;
+  z-index: 3;
+  text-align: left;
+
+  &--option {
+    padding: 6px 50px 5px 10px;
+    min-width: 160px;
+    cursor: default;
+    font-size: 12px;
+
+    &:hover {
+      background: linear-gradient(to top, #555, #333);
+      color: white;
+    }
+
+    &:active {
+      color: #e9e9e9;
+      background: linear-gradient(to top, #555, #444);
+    }
+
+    &__disabled {
+      color: #999999;
+      pointer-events: none;
+    }
+  }
+
+  &--separator {
+    width: 100%;
+    height: 1px;
+    background: #CCCCCC;
+    margin: 0 0 0 0;
+  }
+}
+
+//////////////////////////////////////////////////
+// END CONTEXT MENU
+//////////////////////////////////////////////////
