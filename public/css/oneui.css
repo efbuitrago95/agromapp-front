@@ -592,66 +592,66 @@ a.bg-muted:focus {
     background-color: #808080;
 }
 
-.bg-primary {
+.bg-primary-custom {
     background-color: #FFCF3A;
 }
 
-a.bg-primary:hover,
-a.bg-primary:focus {
+a.bg-primary-custom:hover,
+a.bg-primary-custom:focus {
     background-color: #FFCF3A;
 }
 
-.bg-primary-op {
+.bg-primary-custom-op {
     background-color: rgba(92, 144, 210, 0.75);
 }
 
-a.bg-primary-op:hover,
-a.bg-primary-op:focus {
+a.bg-primary-custom-op:hover,
+a.bg-primary-custom-op:focus {
     background-color: rgba(54, 117, 197, 0.75);
 }
 
-.bg-primary-dark {
+.bg-primary-custom-dark {
     background-color: #FB177D;
 }
 
-a.bg-primary-dark:hover,
-a.bg-primary-dark:focus {
+a.bg-primary-custom-dark:hover,
+a.bg-primary-custom-dark:focus {
     background-color: #FB177D;
 }
 
-.bg-primary-dark-op {
+.bg-primary-custom-dark-op {
     background-color: rgba(62, 74, 89, 0.83);
 }
 
-a.bg-primary-dark-op:hover,
-a.bg-primary-dark-op:focus {
+a.bg-primary-custom-dark-op:hover,
+a.bg-primary-custom-dark-op:focus {
     background-color: rgba(41, 49, 59, 0.83);
 }
 
-.bg-primary-darker {
+.bg-primary-custom-darker {
     background-color: #FFCF3A;
 }
 
-a.bg-primary-darker:hover,
-a.bg-primary-darker:focus {
+a.bg-primary-custom-darker:hover,
+a.bg-primary-custom-darker:focus {
     background-color: #171b21;
 }
 
-.bg-primary-light {
+.bg-primary-custom-light {
     background-color: #98b9e3;
 }
 
-a.bg-primary-light:hover,
-a.bg-primary-light:focus {
+a.bg-primary-custom-light:hover,
+a.bg-primary-custom-light:focus {
     background-color: #709ed8;
 }
 
-.bg-primary-lighter {
+.bg-primary-custom-lighter {
     background-color: #ccdcf1;
 }
 
-a.bg-primary-lighter:hover,
-a.bg-primary-lighter:focus {
+a.bg-primary-custom-lighter:hover,
+a.bg-primary-custom-lighter:focus {
     background-color: #a4c1e6;
 }
 
@@ -5600,7 +5600,7 @@ a.list-group-item:focus {
     font-family: Simple-Line-Icons;
     speak: none;
     font-style: normal;
-    font-weight: 400;
+    font-weight: bold;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
@@ -6428,7 +6428,7 @@ a.list-group-item:focus {
 
 #sidebar {
     width: 230px;
-    background-color: #FFCF3A;
+    background-color: #2c343f;
 }
 
 .sidebar-l #sidebar {
@@ -7982,8 +7982,6 @@ a.block.block-link-hover3:active {
 .block-options > li > button {
     display: block;
     padding: 2px 3px;
-    color: #999999;
-    opacity: .6;
 }
 
 .block.block-themed > .block-header .block-options > li > a,

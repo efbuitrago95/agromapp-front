@@ -20,89 +20,6 @@ class LanguagesTable extends Component {
     this.props.onChangeLanguage(event.target.name, event.target.value);
   }
 
-  renderModalEdit() {
-    return (
-      <>
-        <button
-          type="hidden"
-          className="d-none"
-          data-toggle="modal"
-          data-target="#modal"
-          id="btnOpenModal"
-        ></button>
-        <div
-          className="modal fade"
-          id="modal"
-          tabIndex="-1"
-          role="dialog"
-          aria-labelledby="exampleModalCenterTitle"
-          aria-hidden="true"
-        >
-          <div className="modal-dialog modal-dialog-centered" role="document">
-            <div className="modal-content">
-              <div className="modal-body">
-                <button
-                  type="button"
-                  className="close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                ></button>
-                <form>
-                  <h6 className="heading-small text-muted mb-4">
-                    Información del idioma
-                  </h6>
-                  <div className="pl-lg-4">
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="form-group">
-                          <label
-                            className="form-control-label"
-                            htmlFor="input-username"
-                          >
-                            Nombre
-                          </label>
-                          <input
-                            name="id"
-                            type="hidden"
-                            className="d-none"
-                            onChange={this.inputHandler}
-                          />
-                          <input
-                            name="name"
-                            type="text"
-                            id="input-username"
-                            className="form-control form-control-alternative"
-                            onChange={this.inputHandler}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <button
-                      type="button"
-                      className="btn-cancel-agromapp mr-3"
-                      data-dismiss="modal"
-                      id="closeModal"
-                    >
-                      Cancelar
-                    </button>
-                    <button type="submit" className="btn-success-agromapp">
-                      Guardar
-                    </button>
-                    <button type="submit" className="btn-success-agromapp">
-                      Actualizar
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </>
-    );
-  }
-
   render() {
     return (
       <>
@@ -124,7 +41,7 @@ class LanguagesTable extends Component {
                     <td className="text-center">
                       <div className="btn-group">
                         <button
-                          className="btn btn-xs btn-default"
+                          className="btn btn-xs bg-none"
                           type="button"
                           data-toggle="tooltip"
                           title="Editar"
@@ -145,7 +62,6 @@ class LanguagesTable extends Component {
           </table>
           {this.props.children}
         </div>
-        {this.renderModalEdit()}
       </>
     );
   }

@@ -67,59 +67,59 @@ a.text-primary-lighter:hover, a.text-primary-lighter:active, a.text-primary-ligh
     opacity: .75
 }
 
-.bg-primary {
+.bg-primary-custom {
     background-color: #a48ad4
 }
 
-a.bg-primary:hover, a.bg-primary:focus {
+a.bg-primary-custom:hover, a.bg-primary-custom:focus {
     background-color: #8765c6
 }
 
-.bg-primary-op {
+.bg-primary-custom-op {
     background-color: rgba(164, 138, 212, 0.75)
 }
 
-a.bg-primary-op:hover, a.bg-primary-op:focus {
+a.bg-primary-custom-op:hover, a.bg-primary-custom-op:focus {
     background-color: rgba(135, 101, 198, 0.75)
 }
 
-.bg-primary-dark {
+.bg-primary-custom-dark {
     background-color: #4f546b
 }
 
-a.bg-primary-dark:hover, a.bg-primary-dark:focus {
+a.bg-primary-custom-dark:hover, a.bg-primary-custom-dark:focus {
     background-color: #393d4e
 }
 
-.bg-primary-dark-op {
+.bg-primary-custom-dark-op {
     background-color: rgba(79, 84, 107, 0.83)
 }
 
-a.bg-primary-dark-op:hover, a.bg-primary-dark-op:focus {
+a.bg-primary-custom-dark-op:hover, a.bg-primary-custom-dark-op:focus {
     background-color: rgba(57, 61, 78, 0.83)
 }
 
-.bg-primary-darker {
+.bg-primary-custom-darker {
     background-color: #353847
 }
 
-a.bg-primary-darker:hover, a.bg-primary-darker:focus {
+a.bg-primary-custom-darker:hover, a.bg-primary-custom-darker:focus {
     background-color: #1f212a
 }
 
-.bg-primary-light {
+.bg-primary-custom-light {
     background-color: #c7b7e4
 }
 
-a.bg-primary-light:hover, a.bg-primary-light:focus {
+a.bg-primary-custom-light:hover, a.bg-primary-custom-light:focus {
     background-color: #aa91d7
 }
 
-.bg-primary-lighter {
+.bg-primary-custom-lighter {
     background-color: #e4dcf2
 }
 
-a.bg-primary-lighter:hover, a.bg-primary-lighter:focus {
+a.bg-primary-custom-lighter:hover, a.bg-primary-custom-lighter:focus {
     background-color: #c7b7e4
 }
 

@@ -22,7 +22,7 @@ const stateInitial = {
   error: false
 };
 
-class LanguagesPage extends Component {
+class LanguagesEditorPage extends Component {
   constructor(props) {
     super(props);
 
@@ -136,7 +136,7 @@ class LanguagesPage extends Component {
 }
 
 // Set defaultProps
-LanguagesPage.defaultProps = {
+LanguagesEditorPage.defaultProps = {
   languages: {}
 };
 
@@ -153,8 +153,8 @@ const mapDispatchToProps = {
 };
 
 // Export Class
-const _LanguagesPage = connect(
+const _LanguagesEditorPage = connect(
   mapStateToProps,
   mapDispatchToProps
-)(LanguagesPage);
-export { _LanguagesPage as LanguagesPage };
+)(LanguagesEditorPage);
+export { _LanguagesEditorPage as LanguagesEditorPage };

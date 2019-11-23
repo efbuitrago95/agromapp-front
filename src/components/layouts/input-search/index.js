@@ -53,7 +53,7 @@ class InputSearchLayout extends Component {
             <span className="input-group-btn">
               {!this.state.keyword.length ? (
                 <button
-                  className="btn bg-primary"
+                  className="btn bg-primary-custom text-white"
                   type="button"
                   onClick={e => {
                     e.preventDefault();

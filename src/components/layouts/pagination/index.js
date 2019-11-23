@@ -61,20 +61,7 @@ class PaginationLayout extends Component {
         {this.props.pagination.totalItems &&
         this.props.pagination.totalPages >= 1 ? (
           <nav>
-            <ul className="pager">
-              <li>
-                <span>
-                  {" "}
-                  Mostrando&nbsp;
-                  {this.props.pagination.currentPage === 1 ? (
-                    1
-                  ) : (
-                    <>{var1}</>
-                  )} - {var3}
-                  &nbsp;de&nbsp;{this.props.pagination.totalItems}
-                  &nbsp;Resultados.
-                </span>
-              </li>
+            <ul className="pagination justify-content-center">
               <li className="previous">
                 <button
                   className="cursor-pointer"
@@ -84,10 +71,12 @@ class PaginationLayout extends Component {
                   Anterior
                 </button>
               </li>
-              <li className="center d-none d-md-block">
+              <li>
                 <span>
-                  Pagina: {this.state.currentPage} /{" "}
-                  {this.props.pagination.totalPages}
+                  {this.props.pagination.currentPage === 1 ? 1 : <>{var1}</>} -{" "}
+                  {var3}
+                  &nbsp;de&nbsp;{this.props.pagination.totalItems}
+                  &nbsp;Resultados.
                 </span>
               </li>
               <li className="next">

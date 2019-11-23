@@ -11,7 +11,7 @@ class PageHeaderLayout extends Component {
                 {this.props.title} <small>{this.props.subTitle}</small>
               </h1>
             </div>
-            <div className="col-sm-5 text-right hidden-xs">
+            <div className="col-5 d-flex justify-content-end hidden-xs">
               <ol className="breadcrumb push-10-t">{this.props.paths()}</ol>
             </div>
           </div>
